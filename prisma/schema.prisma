@@ -1,0 +1,37 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client"
+  output   = "../.prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    Int  @id @default(autoincrement())
+	telegramID BigInt @unique
+  name  String
+	image String
+  date      DateTime @default(now())
+	Statistics Statistics[]
+}
+
+model Statistics {
+  id        Int     @id @default(autoincrement())
+
+  userID    Int
+  user      User    @relation(fields: [userID], references: [id])
+
+  deckSize Int
+  time     Float
+  steps    Int
+  trys     Int
+
+  date      DateTime @default(now())
+
+  @@unique([userID, deckSize])
+}
