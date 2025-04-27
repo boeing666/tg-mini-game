@@ -66,5 +66,11 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ['@nuxt/icon', '@nuxt/fonts', '@pinia/nuxt', 'pinia-plugin-persistedstate'],
+  sound: {
+    sounds: {
+      scan: true
+    }
+  },
+
+  modules: ['@vueuse/sound/nuxt', '@nuxt/icon', '@nuxt/fonts', '@pinia/nuxt', 'pinia-plugin-persistedstate'],
 })

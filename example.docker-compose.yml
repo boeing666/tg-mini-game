@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3017:3000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=
+      - TG_BOT_TOKEN=
+      - JWT_SECRET=
+    restart: unless-stopped

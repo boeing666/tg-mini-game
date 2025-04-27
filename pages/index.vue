@@ -1,6 +1,22 @@
 
 <script setup lang="ts">
 
+import { useSound } from '@vueuse/sound'
+
+const sounds = [
+    { id: 13, play: useSound('/sounds/patapim.mp3', {volume: 0.1}).play, played: false },
+    { id: 4, play: useSound('/sounds/tralala.mp3', {volume: 0.1}).play, played: false },
+    { id: 3, play: useSound('/sounds/crocodilo.mp3', {volume: 0.1}).play, played: false },
+]
+
+function playSound(id: number) {
+    const sound = sounds.find(s => s.id === id);
+    if (sound && !sound.played) {
+        sound.play();
+        sound.played = true;
+    }
+}
+
 const { $trpc } = useNuxtApp()
 
 const deckSize = [
@@ -58,6 +74,7 @@ async function flipCard(card: typeof cardsData.value[0]) {
     const res = await $trpc.user.openCard.query( { index: card.id } )
     if (res) {
         card.img = `/images/${res.image}.png`
+        playSound(res.image)
     }
 
     if (!cardOne.value) {
@@ -180,7 +197,7 @@ useHead({
                 <div v-for="(card, index) in cardsData" 
                     :key="index" 
                     class="relative cursor-pointer perspective h-20 w-full flex-shrink-0" 
-                    @click="flipCard(card)"  
+                    @click="flipCard(card)" 
                     :class="{ 'animate-shake': card.shake }"
                 >
                     <div 
