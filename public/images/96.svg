@@ -1,0 +1,13 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="reestro-128">
+<g id="reestro-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#B750D1"/>
+</g>
+<g id="Icon">
+<path id="House" d="M24 56.6003C24 53.4276 25.5056 50.4431 28.0573 48.5576L58.0573 26.391C61.5893 23.7812 66.4107 23.7812 69.9427 26.391L99.9427 48.5576C102.494 50.4431 104 53.4276 104 56.6003V90C104 95.5229 99.5229 100 94 100H34C28.4772 100 24 95.5229 24 90V56.6003Z" fill="white"/>
+<path id="Line" d="M78 100V78.0001C78 70.2681 71.732 64.0001 64 64.0001V64.0001C56.268 64.0001 50 70.2681 50 78.0001V100" stroke="#222222" stroke-width="4.4" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</svg>

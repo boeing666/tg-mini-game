@@ -1,0 +1,14 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="zarplata-128">
+<g id="zarplata-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#FF8227"/>
+</g>
+<g id="Icon">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M34 30C28.4772 30 24 34.4772 24 40V88C24 93.5228 28.4772 98 34 98H96C101.523 98 106 93.5228 106 88V81.1679C109.532 79.6248 112 76.1006 112 72V56C112 51.8994 109.532 48.3752 106 46.8321V40C106 34.4772 101.523 30 96 30H34Z" fill="white"/>
+<path id="Line" d="M98 52H80C73.3726 52 68 57.3726 68 64V64C68 70.6274 73.3726 76 80 76H98" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle id="Dot" cx="80" cy="64" r="4" fill="#222222"/>
+</g>
+</g>
+</g>
+</svg>

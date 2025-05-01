@@ -1,0 +1,18 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="market-scanner-128">
+<g id="market-scanner-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#51ADFF"/>
+</g>
+<g id="Icon">
+<rect id="Rectangle 7057" x="22" y="22" width="84" height="84" rx="16" fill="white"/>
+<g id="Frame">
+<path id="Vector" d="M37.5031 50.7503L37.5031 41.6414C37.5031 39.3547 39.3568 37.501 41.6435 37.501L50.7523 37.501" stroke="#222222" stroke-width="4.55444" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M90.5002 50.7503L90.5002 41.6414C90.5002 39.3547 88.6465 37.501 86.3598 37.501L77.251 37.501" stroke="#222222" stroke-width="4.55444" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M90.5002 77.2488L90.5002 86.3577C90.5002 88.6444 88.6465 90.4981 86.3598 90.4981L77.251 90.4981" stroke="#222222" stroke-width="4.55444" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M37.5031 77.2488L37.5031 86.3577C37.5031 88.6444 39.3568 90.4981 41.6435 90.4981L50.7523 90.4981" stroke="#222222" stroke-width="4.55444" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

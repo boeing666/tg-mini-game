@@ -1,0 +1,16 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="declarant-128">
+<g id="declarant-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#3DBC5D"/>
+</g>
+<g id="Icon">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M42.5171 34.8608C41.3407 35.5903 40.625 36.8761 40.625 38.2604V87.6654C40.625 89.8746 38.8341 91.6654 36.625 91.6654H34C31.7909 91.6654 30 93.4563 30 95.6654V100.415C30 102.625 31.7909 104.415 34 104.415H94C96.2091 104.415 98 102.625 98 100.415V95.6654C98 93.4563 96.2091 91.6654 94 91.6654H91.375C89.1659 91.6654 87.375 89.8746 87.375 87.6654V38.2604C87.375 36.8761 86.6593 35.5903 85.4829 34.8608L66.1079 22.8474C64.8167 22.0468 63.1833 22.0468 61.8921 22.8474L42.5171 34.8608Z" fill="white"/>
+<g id="Lines">
+<path id="Vector" d="M51.25 61.6498L76.75 44.9155" stroke="#222222" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M51.25 76.7905L76.75 60.0561" stroke="#222222" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

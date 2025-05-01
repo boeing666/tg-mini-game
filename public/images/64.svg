@@ -1,0 +1,25 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6067_93480)">
+<g clip-path="url(#clip1_6067_93480)">
+<g clip-path="url(#clip2_6067_93480)">
+<rect width="128" height="128" rx="32" fill="#FE4C4C"/>
+</g>
+<circle cx="64" cy="64" r="44" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M64 71.0007C67.8667 71.0007 71.0013 67.8661 71.0013 63.9994C71.0013 60.1327 67.8667 56.998 64 56.998C60.1333 56.998 56.9987 60.1327 56.9987 63.9994C56.9987 67.8661 60.1333 71.0007 64 71.0007Z" fill="#222222"/>
+<path d="M64 63.9997L88 85.9997" stroke="#222222" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M68.8564 43.0789C78.3762 45.2799 85.4725 53.8112 85.4725 64C85.4725 65.7921 85.2529 67.5329 84.8393 69.197" stroke="#222222" stroke-width="4.4" stroke-linecap="round"/>
+<path d="M59.7632 32.2782C61.1494 32.0949 62.5636 32.0002 64 32.0002C81.6731 32.0002 96 46.3271 96 64.0002C96 68.4398 95.0959 72.6681 93.4618 76.5113" stroke="#222222" stroke-width="4.4" stroke-linecap="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_6067_93480">
+<rect width="128" height="128" fill="white"/>
+</clipPath>
+<clipPath id="clip1_6067_93480">
+<rect width="128" height="128" fill="white"/>
+</clipPath>
+<clipPath id="clip2_6067_93480">
+<rect width="128" height="128" fill="white"/>
+</clipPath>
+</defs>
+</svg>

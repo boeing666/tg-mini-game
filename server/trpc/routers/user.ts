@@ -5,6 +5,7 @@ import { z } from 'zod'
 import jwt from "jsonwebtoken"
 import crypto from "crypto"
 import prisma from '~/lib/prisma'
+import { encodeImagePath } from '~/utils/imageHash'
 
 function encryptDeckValues(deckValues: number[], secret: string): string {
   const json = JSON.stringify(deckValues);
@@ -25,7 +26,6 @@ function updatePlayerData(
     deckSize: number,
     deckValues: string,
     steps: number,
-    lastcell: number,
     startTime: number ) {
 
   const token = jwt.sign( { 
@@ -33,7 +33,6 @@ function updatePlayerData(
     deckSize: deckSize,
     deckValues: deckValues,
     steps: steps,
-    lastcell: lastcell,
     startTime: startTime,
   }, jwt_token, { expiresIn: '24h' } )
 
@@ -55,7 +54,8 @@ function generateDeckValues(deckCells: number) {
   }
 
   const uniqueValues = Array.from(
-    { length: deckCells / 2 }, (_, i) => i + 1
+    { length: deckCells / 2 }, 
+    () => Math.floor(Math.random() * 132) + 1
   );
 
   const deckValues = [...uniqueValues, ...uniqueValues];
@@ -78,9 +78,13 @@ export const userRouter = router({
       }),
     })
   ).query(async ({ input, ctx }) => {
+    const generatedDeck = generateDeckValues(input.deckSize * input.deckSize)
+    const encryptedDeckValues = encryptDeckValues(generatedDeck, jwt_token)
 
-    const encryptedDeck = generateDeckValues(input.deckSize * input.deckSize)
-    const encryptedDeckValues = encryptDeckValues(encryptedDeck, jwt_token)
+    const paths = generatedDeck.map((value) => {
+      const imagePath = `${value}.svg` // Adjust the path as needed
+      return encodeImagePath(imagePath)
+    })
 
     updatePlayerData(
       ctx.event,
@@ -88,40 +92,42 @@ export const userRouter = router({
       input.deckSize,
       encryptedDeckValues,
       0,
-      -1,
-      Date.now(),
+      Math.floor(Date.now() / 1000),
     );
 
     return {
+      paths,
       success: true,
     }
   }),
-  openCard: authProcedure.input(
+  openCards: authProcedure.input(
     z.object({
-      index: z.number().min(0).max(63),
+      index1: z.number().min(0).max(63),
+      index2: z.number().min(0).max(63),
     })
   ).query(async ({ input, ctx }) => {
     const userId = ctx.user
     const deckSize = ctx.jwt.deckSize as number
-    const currentCell = input.index
-    const lastCell = ctx.jwt.lastcell as number
+    const cell1 = input.index1 as number
+    const cell2 = input.index2 as number
 
-    if (currentCell < 0 || currentCell > (deckSize * deckSize)) {
-      throw new TRPCError({ code: 'PARSE_ERROR' })
-    }
+    [cell1, cell2].forEach(cell => {
+      if (cell < 0 || cell >= (deckSize * deckSize)) {
+        throw new TRPCError({ code: 'PARSE_ERROR' });
+      }
+    });
+
+    ctx.jwt.steps += 2
 
     const decryptedCells = decryptDeckValues(ctx.jwt.deckValues, jwt_token)
-    const resultIndex = decryptedCells[currentCell]
 
-    if (lastCell != -1) {
-      if (decryptedCells[lastCell] === decryptedCells[currentCell]) {
-        decryptedCells[lastCell] = -1
-        decryptedCells[currentCell] = -1
-        ctx.jwt.deckValues = encryptDeckValues(decryptedCells, jwt_token)
-      }
+    if (decryptedCells[cell1] === decryptedCells[cell2]) {
+      decryptedCells[cell1] = -1
+      decryptedCells[cell2] = -1
+      ctx.jwt.deckValues = encryptDeckValues(decryptedCells, jwt_token)
 
       if (decryptedCells.every((cell) => cell === -1)) {
-        const playedTime = Math.floor((Date.now() - ctx.jwt.startTime) / 1000);
+        const playedTime = Math.floor((Date.now() / 1000)) - ctx.jwt.startTime;
         const existingStats = await prisma.statistics.findFirst({
           where: {
             userID: userId,
@@ -154,21 +160,17 @@ export const userRouter = router({
       } 
     }
 
-    const encryptedDeckValues = encryptDeckValues(decryptedCells, jwt_token)
-
     updatePlayerData(
       ctx.event,
       ctx.user, 
       ctx.jwt.deckSize,
-      encryptedDeckValues,
-      ctx.jwt.steps + 1,
-      lastCell != -1 ? -1 : currentCell,
+      ctx.jwt.deckValues,
+      ctx.jwt.steps,
       ctx.jwt.startTime,
     );
 
     return {
-      image: resultIndex,
-      success: true,
+      success: decryptedCells[cell1] === decryptedCells[cell2],
     }
   }),
   auth: publicProcedure.input(

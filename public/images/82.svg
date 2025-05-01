@@ -1,0 +1,16 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="nds-plus-128">
+<g id="nds-plus-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#FF8227"/>
+</g>
+<g id="Icon">
+<circle id="Ellipse" cx="64" cy="63.9492" r="44" fill="white"/>
+<g id="Lines">
+<path id="Vector" d="M44.0909 57.6602L53.5923 67.423C55.9595 69.8555 59.8715 69.8416 62.2215 67.3925L84.0909 44.6" stroke="#222222" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M44.0909 72.3875L51.4919 79.6615C55.4024 83.5049 61.6785 83.4827 65.5616 79.6116L85.9091 59.3273" stroke="#222222" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

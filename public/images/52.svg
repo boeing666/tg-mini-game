@@ -1,0 +1,18 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="extern-lite-128">
+<g id="extern-64" clip-path="url(#clip0)">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#FFBE00"/>
+</g>
+<g id="1 - Checkmark">
+<circle id="Ellipse" cx="64" cy="63.9492" r="44" fill="white"/>
+<path id="Vector" d="M44 63.3239L55.534 75.4159C57.9095 77.9064 61.8887 77.8923 64.2465 75.3851L90 48" stroke="#222222" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="128" height="128" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ya-buhgalter-128">
+<g id="ya-buhgalter-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#51ADFF"/>
+</g>
+<g id="Icon">
+<path id="Mag" fill-rule="evenodd" clip-rule="evenodd" d="M27.7818 94.6144C24.7247 94.7374 22 92.3438 22 89.2842V33.4295C22 31.1212 23.5743 29.1257 25.8569 28.7823C33.6456 27.6103 51.4456 26.3252 62.4556 36.4737C63.3194 37.2699 64.6806 37.2699 65.5444 36.4737C76.5544 26.3252 94.3544 27.6103 102.143 28.7823C104.426 29.1257 106 31.1212 106 33.4295V89.2842C106 92.3438 103.275 94.7374 100.218 94.6144C92.0967 94.2875 77.2601 95.0251 67.9155 103.474C65.7986 105.387 62.2013 105.387 60.0845 103.474C50.7399 95.0251 35.9033 94.2875 27.7818 94.6144Z" fill="white"/>
+<g id="Lines">
+<path id="Vector" d="M36 52H62" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M36 62H62" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M36 72H50" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="normativ-128">
+<g id="normativ-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#FF8227"/>
+</g>
+<g id="Icon">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M89.7514 74.9811C92.4625 69.9225 94 64.1408 94 58C94 38.1177 77.8823 22 58 22C38.1177 22 22 38.1177 22 58C22 77.8823 38.1177 94 58 94C64.1359 94 69.9133 92.4649 74.969 89.7579L91.3846 106.174C93.0509 107.84 95.7524 107.84 97.4186 106.174L106.164 97.4279C107.83 95.7617 107.83 93.0602 106.164 91.3939L89.7514 74.9811Z" fill="white"/>
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M80 58C80 45.8472 70.1528 36 58 36C45.8472 36 36 45.8472 36 58C36 70.1528 45.8472 80 58 80C70.1528 80 80 70.1528 80 58Z" stroke="#222222" stroke-width="4.4"/>
+</g>
+</g>
+</g>
+</svg>

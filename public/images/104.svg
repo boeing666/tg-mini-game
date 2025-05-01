@@ -1,0 +1,14 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="security-128">
+<g id="security-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#FF5A49"/>
+</g>
+<g id="Icon">
+<ellipse id="Ellipse" cx="64" cy="64" rx="46" ry="40" fill="white"/>
+<ellipse id="Ring" cx="64" cy="64" rx="34" ry="28" stroke="#222222" stroke-width="4"/>
+<path id="Arrow" d="M48.5455 74.1565C52.2135 77.7245 57.7746 80 64 80C75.0457 80 84 72.8366 84 64C84 55.1634 75.0457 48 64 48C53.7979 48 45.38 54.111 44.1536 62.007C43.9841 63.0985 44.8954 64 46 64H72.7677M72.7677 64L64.1818 57.3333M72.7677 64L64.1818 70.6667" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</svg>

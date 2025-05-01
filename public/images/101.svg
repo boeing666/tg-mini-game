@@ -1,0 +1,17 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="rpn-128">
+<g id="rpn-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#FF8227"/>
+</g>
+<g id="Icon">
+<path id="Intersect" fill-rule="evenodd" clip-rule="evenodd" d="M30.8442 102.77C28.5288 102.339 26.7227 100.533 26.2923 98.2175C22.7579 79.2036 28.3449 58.8279 43.0533 44.1195C57.765 29.4078 78.1466 23.8215 97.1641 27.3608C99.4796 27.7917 101.286 29.5981 101.716 31.9137C105.25 50.9276 99.6634 71.3033 84.955 86.0117C70.2433 100.723 49.8617 106.31 30.8442 102.77Z" fill="white"/>
+<g id="Lines">
+<path id="Vector" d="M86.6306 41.2864L39.3118 88.6052" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M80.4585 76.2612L51.6558 76.2612" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M88.6879 59.8025L68.1145 59.8025" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

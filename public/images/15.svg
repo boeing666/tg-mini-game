@@ -1,0 +1,13 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="buhgalteria-activ-128">
+<g id="buhgalteria-activ-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#51ADFF"/>
+</g>
+<g id="Icon">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M34.4852 28C29.1398 28 26.4628 34.4628 30.2426 38.2426L41.375 49.3751L23.6177 67.1324C21.2746 69.4755 21.2746 73.2745 23.6177 75.6176L52.2009 104.201C54.5441 106.544 58.3431 106.544 60.6862 104.201L78.4435 86.4436L89.7573 97.7574C93.5371 101.537 100 98.8601 100 93.5147V36C100 31.5817 96.4182 28 92 28H34.4852Z" fill="white"/>
+<path id="Line" d="M56 92L75.5858 72.4142C76.3668 71.6332 77.6332 71.6332 78.4142 72.4142L88.2929 82.2929C88.9229 82.9229 90 82.4767 90 81.5858V46" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</svg>

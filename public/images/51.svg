@@ -1,0 +1,13 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="extern-archive-128">
+<g id="extern-archive-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#FF8227"/>
+</g>
+<g id="Icon">
+<path id="Folder" d="M22 46C22 41.5817 25.5817 38 30 38H66.6863C68.808 38 70.8429 37.1571 72.3431 35.6569L77.6569 30.3431C79.1571 28.8429 81.192 28 83.3137 28H98C102.418 28 106 31.5817 106 36V92C106 96.4183 102.418 100 98 100H30C25.5817 100 22 96.4183 22 92V46Z" fill="white"/>
+<path id="Line" d="M42 66.2817L54.1882 79.2924C56.5704 81.8354 60.6105 81.8211 62.9747 79.2613L90 50" stroke="#222222" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</svg>

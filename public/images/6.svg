@@ -1,0 +1,20 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="auditor-128" clip-path="url(#clip0)">
+<g id="auditor-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#B750D1"/>
+</g>
+<g id="Icon">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M81 28C79.3431 28 78.0334 26.6411 77.6826 25.0218C76.3174 18.7205 70.71 14 64 14C57.29 14 51.6826 18.7205 50.3174 25.0218C49.9666 26.6411 48.6569 28 47 28H40C33.3726 28 28 33.3726 28 40L28 96C28 102.627 33.3726 108 40 108H88C94.6274 108 100 102.627 100 96V40C100 33.3726 94.6274 28 88 28H81Z" fill="white"/>
+<path id="Vector" fill-rule="evenodd" clip-rule="evenodd" d="M64 30C66.2092 30 68 28.209 68 26C68 23.7908 66.2092 22 64 22C61.7908 22 60 23.7908 60 26C60 28.209 61.7908 30 64 30Z" fill="#222222"/>
+<path id="Vector_2" d="M42 36V38C42 41.3137 44.6863 44 48 44H80C83.3137 44 86 41.3137 86 38V36" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Checkmark" d="M46.4 76L55.9416 85.2066C57.5378 86.7467 60.0825 86.694 61.6134 85.0889L83.6372 62" stroke="#222222" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="128" height="128" fill="white"/>
+</clipPath>
+</defs>
+</svg>

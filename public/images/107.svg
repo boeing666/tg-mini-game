@@ -1,0 +1,13 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="sign-128">
+<g id="sign-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#00CCAE"/>
+</g>
+<g id="Icon">
+<rect id="Rounded Rectangle" x="18" y="36" width="92" height="56" rx="8" fill="white"/>
+<path id="Vector" d="M30 76.2909C30 76.2909 55.0648 48.8994 61 52.2907C66.9352 55.682 51 69.4479 56 73C61 76.5521 74 59.8994 79 61.8994C84 63.8994 78 70.0436 82 71.8994C86 73.7552 97 66.2913 97 66.2913" stroke="#222222" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</svg>

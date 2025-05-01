@@ -1,0 +1,21 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="market-app-128">
+<g id="market-app-64">
+<g id="Base">
+<rect id="Rectangle Rounded" width="128" height="128" rx="32" fill="#51ADFF"/>
+</g>
+<g id="Icon">
+<path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M62.8765 23.4024C61.5479 22.7547 60 23.7221 60 25.2001V42H26C22.6863 42 20 44.6863 20 48V94C20 97.3137 22.6863 100 26 100H102C105.314 100 108 97.3137 108 94V48C108 44.6863 105.314 42 102 42H98V25.2001C98 23.7221 96.4521 22.7547 95.1236 23.4024L89.1888 26.2958C88.0132 26.8689 86.6316 26.8311 85.489 26.1945L80.9469 23.6637C79.7366 22.9894 78.2634 22.9894 77.0531 23.6637L72.511 26.1945C71.3684 26.8311 69.9868 26.8689 68.8112 26.2958L62.8765 23.4024Z" fill="white"/>
+<g id="Buttons">
+<ellipse id="Ellipse 955" rx="3" ry="3" transform="matrix(-4.37114e-08 1 1 4.37114e-08 65 71)" fill="#222222"/>
+<ellipse id="Ellipse 958" rx="3" ry="3" transform="matrix(-4.37114e-08 1 1 4.37114e-08 65 85)" fill="#222222"/>
+<ellipse id="Ellipse 956" rx="3" ry="3" transform="matrix(-4.37114e-08 1 1 4.37114e-08 79 71)" fill="#222222"/>
+<ellipse id="Ellipse 959" rx="3" ry="3" transform="matrix(-4.37114e-08 1 1 4.37114e-08 79 85)" fill="#222222"/>
+<ellipse id="Ellipse 957" rx="3" ry="3" transform="matrix(-4.37114e-08 1 1 4.37114e-08 93 71)" fill="#222222"/>
+<ellipse id="Ellipse 960" rx="3" ry="3" transform="matrix(-4.37114e-08 1 1 4.37114e-08 93 85)" fill="#222222"/>
+</g>
+<path id="Line" d="M62 54L96 54" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</svg>
