@@ -1,6 +1,6 @@
 
 <script setup lang="ts">
-
+import { usePopup } from 'vue-tg/8.0'
 const { $trpc } = useNuxtApp()
 
 const deckSize = [
@@ -26,6 +26,7 @@ function changeDeckSize() {
     gameOver()
 }
 
+const popup = usePopup()
 const timeLeft = ref(0)
 const flips = ref(0)
 const disableDeck = ref(false)
@@ -74,6 +75,10 @@ async function flipCard(card: typeof cardsData.value[0]) {
                 cardOne.value = null
                 cardTwo.value = null
                 disableDeck.value = false
+                if (matchCards.value == cardsData.value.length / 2) {
+                    popup.showAlert('Поздравляем, вы выиграли!')
+                    gameOver()
+                }
                 return
             }
 
@@ -174,16 +179,16 @@ prepareGame()
                     }"
                 >
                     <div 
-                        class="absolute w-full h-full bg-white rounded-4xl shadow-md transition-transform duration-200 ease-linear flex items-center justify-center" 
+                        class="absolute w-full h-full bg-white rounded-3xl transition-transform duration-200 ease-linear flex items-center justify-center" 
                         :class="{ 'rotate-y-180': card.flipped }"
                     >
                         <Icon 
                             name="material-symbols:question-mark" 
-                            class="text-gray-500 text-4xl" />
+                            class="text-gray-400 text-3xl" />
                     </div>
 
                     <div
-                        class="absolute w-full h-full bg-white rounded-4xl shadow-md transition-transform duration-200 ease-linear backface-hidden rotate-y-180 flex items-center justify-center" 
+                        class="absolute w-full h-full bg-white rounded-3xl transition-transform duration-200 ease-linear backface-hidden rotate-y-180 flex items-center justify-center" 
                         :class="{ 'rotate-y-0': card.flipped }"
                         @mousedown.prevent
                     >
