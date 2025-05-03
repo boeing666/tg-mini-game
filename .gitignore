@@ -26,4 +26,5 @@ package-lock.json
 .prisma
 prisma/migrations
 
+bun.lock
 docker-compose.yml

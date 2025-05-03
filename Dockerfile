@@ -2,11 +2,11 @@ FROM node:23-alpine
 
 WORKDIR /app
 
-COPY . .
-
-RUN npm install
-RUN npm run build
+RUN npm install -g bun
+COPY package.json ./
 
 EXPOSE 3000
 
-CMD ["node", ".output/server/index.mjs"]
+COPY entrypoint.sh ./
+RUN chmod +x entrypoint.sh
+ENTRYPOINT ["./entrypoint.sh"]
