@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "db:deploy": "bun prisma migrate deploy && bun prisma generate",
-    "postinstall": "nuxt prepare && bun run db:deploy"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.11.2",
