@@ -3,10 +3,13 @@ FROM node:23-alpine
 WORKDIR /app
 
 RUN npm install -g bun
-COPY package.json ./
+
+COPY . .
+
+RUN bun install --production
+
+RUN chmod +x entrypoint.sh
 
 EXPOSE 3000
 
-COPY entrypoint.sh ./
-RUN chmod +x entrypoint.sh
 ENTRYPOINT ["./entrypoint.sh"]

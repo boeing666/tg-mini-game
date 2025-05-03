@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3017:3000"
+      - "24678:24678"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/app
+      - telegram-nodemodules:/app/node_modules
+    restart: unless-stopped
+
+volumes:
+  telegram-nodemodules:
