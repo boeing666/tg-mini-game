@@ -21,8 +21,7 @@ export const userRouter = router({
                 trys: true,
                 user: {
                     select: {
-                        image: true,
-                        name: true,
+                        username: true,
                     },
                 },
             },

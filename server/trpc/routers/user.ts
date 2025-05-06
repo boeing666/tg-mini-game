@@ -188,7 +188,7 @@ export const userRouter = router({
 
     const bot_token = process.env.TG_BOT_TOKEN as string
     if (!validateTelegramData(hash, initData, bot_token)) {
-      throw new TRPCError({ code: 'PARSE_ERROR' })
+      throw new TRPCError({ code: 'NOT_FOUND' })
     }
 
     let user = await prisma.user.findUnique({
@@ -201,8 +201,7 @@ export const userRouter = router({
       user = await prisma.user.create({
         data: {
           telegramID: parsedInitData.user.id,
-          name: parsedInitData.user.first_name,
-          image: parsedInitData.user.photo_url,
+          username: parsedInitData.user.username,
         },
       })
     }

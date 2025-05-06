@@ -1,0 +1,12 @@
+FROM node:23-alpine
+
+WORKDIR /app
+
+RUN npm install -g bun
+
+EXPOSE 3000
+
+COPY entrypoint.sh ./
+RUN chmod +x entrypoint.sh
+
+ENTRYPOINT ["./entrypoint.sh"]

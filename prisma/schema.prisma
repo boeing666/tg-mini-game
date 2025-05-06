@@ -12,12 +12,11 @@ datasource db {
 }
 
 model User {
-  id    Int  @id @default(autoincrement())
-	telegramID BigInt @unique
-  name  String
-	image String
-  date      DateTime @default(now())
-	Statistics Statistics[]
+  id          Int  @id @default(autoincrement())
+  telegramID  BigInt @unique
+  username    String @unique
+  date        DateTime @default(now())
+  Statistics  Statistics[]
 }
 
 model Statistics {

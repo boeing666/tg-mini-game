@@ -21,6 +21,19 @@ const marginTopCalculate = computed(() => {
   return `${viewport.contentSafeAreaInset.value.top * 2}px`
 })
 
+window.addEventListener('keydown', (e) => {
+	if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'I') {
+		e.preventDefault();
+	}
+	if (e.key === 'F12') {
+		e.preventDefault();
+	}
+});
+
+window.addEventListener('contextmenu', (e) => {
+	e.preventDefault();
+});
+
 </script>
 
 <template>
